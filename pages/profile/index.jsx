@@ -5,7 +5,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { FiLogIn } from "react-icons/fi";
 import Head from "next/head";
 import Settings from "../../assets/icons/settings.svg";
-import Lock from "../../assets/icons/Lock.svg";
+import Lock from "../../assets/icons/lock.svg";
 import Help from "../../assets/icons/help.svg";
 import Logout from "../../assets/icons/Logout.svg";
 import Image from "next/image";
