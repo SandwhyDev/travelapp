@@ -6,6 +6,7 @@ import { BsFacebook } from "react-icons/bs";
 import Facebook from "../../assets/Facebook.png";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 const Register = () => {
   const navigate = useRouter();
@@ -26,6 +27,18 @@ const Register = () => {
   };
   return (
     <div className="w-screen h-screen flex flex-col gap-6  bg-[#F3F5F6] relative">
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300&display=swap"
+          rel="stylesheet"
+        ></link>
+      </Head>
       {loginGoogle && (
         <div
           className="w-full h-full bg-black/40 absolute top-0 p-10 flex flex-col items-center justify-center  "

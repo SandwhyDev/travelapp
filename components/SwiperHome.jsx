@@ -11,6 +11,8 @@ import Plane from "../assets/plane.png";
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 import { useRouter } from "next/router";
+import Head from "next/head";
+
 const SwiperHome = () => {
   const navigate = useRouter();
   const handleNext = () => {
@@ -18,6 +20,18 @@ const SwiperHome = () => {
   };
   return (
     <div className="w-full h-full flex flex-col justify-center items-center relative   ">
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300&display=swap"
+          rel="stylesheet"
+        ></link>
+      </Head>
       <Swiper
         modules={[Autoplay, Pagination]}
         // autoplay={{ delay: 5000 }}

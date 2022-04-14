@@ -4,6 +4,7 @@ import { Autoplay, Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
+import Head from "next/head";
 
 import CardProduct from "./CardProduct";
 const SwiperProduct = () => {

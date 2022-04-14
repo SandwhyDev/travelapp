@@ -5,6 +5,8 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
 import CardProduct from "./CardProduct";
+import Head from "next/head";
+
 const SwiperPhotos = () => {
   return (
     <div className="w-full h-full  ">
