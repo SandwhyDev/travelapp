@@ -20,7 +20,7 @@ const Wellcome = () => {
       </Head>
       <Image src={Logo} />
       <h1 className="uppercase text-[45px] text-[#1BBA85] font-bold font-poppins ">
-        Traveler
+        Pergi
       </h1>
     </div>
   );
