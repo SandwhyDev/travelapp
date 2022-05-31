@@ -21,6 +21,8 @@ const SwiperHome = () => {
   return (
     <div className="w-full h-full flex flex-col justify-center items-center relative   ">
       <Head>
+        <title>Pergi</title>
+        <link rel="icon" href="Logo.png" />
         <link
           href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap"
           rel="stylesheet"

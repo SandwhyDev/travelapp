@@ -20,6 +20,8 @@ const Home = () => {
   return (
     <div className="w-screen h-screen bg-white flex flex-col justify-between gap-5  pt-5 ">
       <Head>
+        <title>Pergi</title>
+        <link rel="icon" href="Logo.png" />
         <link
           href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap"
           rel="stylesheet"

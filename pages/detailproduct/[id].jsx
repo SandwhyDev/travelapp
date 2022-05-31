@@ -1,4 +1,4 @@
-import React,{ useState } from "react";
+import React, { useState } from "react";
 import { BsArrowLeft, BsArrowRightShort } from "react-icons/bs";
 import { BiWifi } from "react-icons/bi";
 import Head from "next/head";
@@ -19,13 +19,15 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
 const DetailProduct = () => {
-  const [showImg, setShowImg] = useState(false)
-  const preImg = ()=>{
-    setShowImg(!showImg)
-  }
+  const [showImg, setShowImg] = useState(false);
+  const preImg = () => {
+    setShowImg(!showImg);
+  };
   return (
     <main className="w-screen h-screen bg-white flex flex-col">
       <Head>
+        <title>Pergi</title>
+        <link rel="icon" href="Logo.png" />
         <link
           href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap"
           rel="stylesheet"
@@ -38,13 +40,16 @@ const DetailProduct = () => {
         ></link>
       </Head>
       {showImg && (
-        <div className="w-screen h-screen bg-black/70 absolute top-0 z-20 flex items-center justify-center p-5" onClick={preImg}>
-           <img
-          src="https://images.pexels.com/photos/2583852/pexels-photo-2583852.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          className=" object-cover"
-          alt=""
+        <div
+          className="w-screen h-screen bg-black/70 absolute top-0 z-20 flex items-center justify-center p-5"
           onClick={preImg}
-        />
+        >
+          <img
+            src="https://images.pexels.com/photos/2583852/pexels-photo-2583852.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            className=" object-cover"
+            alt=""
+            onClick={preImg}
+          />
         </div>
       )}
       <div className="w-full h-[500px] bg-green  ">
@@ -57,16 +62,16 @@ const DetailProduct = () => {
           onClick={preImg}
         /> */}
 
-<Swiper
-        // slidesPerView={1}
-        // spaceBetween={-150}
-        loop={true}
-        // pagination={{ clickable: true }}
-        className="bg-red-500 h-[350px]"
-      >
-        <SwiperSlide>
-          <PreImage />
-        </SwiperSlide>
+        <Swiper
+          // slidesPerView={1}
+          // spaceBetween={-150}
+          loop={true}
+          // pagination={{ clickable: true }}
+          className="bg-red-500 h-[350px]"
+        >
+          <SwiperSlide>
+            <PreImage />
+          </SwiperSlide>
           <SwiperSlide>
             <img
               src="https://images.pexels.com/photos/5819116/pexels-photo-5819116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -103,7 +108,7 @@ const DetailProduct = () => {
               alt=""
             />
           </SwiperSlide>
-      </Swiper>
+        </Swiper>
         <div className="w-full h-20 bg-gradient-to-b from-[#00000067] to-transparent absolute top-0 flex items-center px-5 z-10">
           <Link href={"/home"}>
             <span className="text-white text-xl">

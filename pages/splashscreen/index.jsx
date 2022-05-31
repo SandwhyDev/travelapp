@@ -14,6 +14,8 @@ const SplashScreen = () => {
   return (
     <div className=" w-screen h-screen flex flex-col gap-12 justify-between items-center bg-[#F3F5F6] relative">
       <Head>
+        <title>Pergi</title>
+        <link rel="icon" href="Logo.png" />
         <link
           href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap"
           rel="stylesheet"
