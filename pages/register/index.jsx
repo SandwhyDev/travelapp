@@ -158,9 +158,11 @@ const Register = () => {
             />
           </div>
 
-          <button className="bg-[#A9A9A9] h-[57px] rounded-[15px] capitalize text-[18px] mt-5 text-white font-poppins font-bold hover:bg-[#1BBA85] ">
-            register
-          </button>
+          <Link href={"/home"}>
+            <button className="bg-[#A9A9A9] h-[57px] rounded-[15px] capitalize text-[18px] mt-5 text-white font-poppins font-bold hover:bg-[#1BBA85] ">
+              register
+            </button>
+          </Link>
         </form>
 
         <div className="text-center flex flex-col gap-1">

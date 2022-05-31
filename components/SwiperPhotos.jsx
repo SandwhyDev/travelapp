@@ -6,6 +6,7 @@ import "swiper/css/autoplay";
 import "swiper/css/pagination";
 import CardProduct from "./CardProduct";
 import Head from "next/head";
+import PreImage from "./Image";
 
 const SwiperPhotos = () => {
   return (
@@ -18,11 +19,7 @@ const SwiperPhotos = () => {
         className="bg-red-500 h-[350px]"
       >
         <SwiperSlide>
-          <img
-            src="https://images.pexels.com/photos/2583852/pexels-photo-2583852.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            className="w-full h-full object-cover"
-            alt=""
-          />
+          <PreImage />
         </SwiperSlide>
         <SwiperSlide>
           <img

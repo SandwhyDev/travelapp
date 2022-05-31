@@ -1,4 +1,4 @@
-import React from "react";
+import React,{ useState } from "react";
 import { BsArrowLeft, BsArrowRightShort } from "react-icons/bs";
 import { BiWifi } from "react-icons/bi";
 import Head from "next/head";
@@ -12,7 +12,17 @@ import Love from "../../assets/icons/Love.svg";
 import Image from "next/image";
 import Link from "next/link";
 import SwiperPhotos from "../../components/SwiperPhotos";
+import PreImage from "../../components/Image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation, Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/pagination";
 const DetailProduct = () => {
+  const [showImg, setShowImg] = useState(false)
+  const preImg = ()=>{
+    setShowImg(!showImg)
+  }
   return (
     <main className="w-screen h-screen bg-white flex flex-col">
       <Head>
@@ -27,13 +37,73 @@ const DetailProduct = () => {
           rel="stylesheet"
         ></link>
       </Head>
+      {showImg && (
+        <div className="w-screen h-screen bg-black/70 absolute top-0 z-20 flex items-center justify-center p-5" onClick={preImg}>
+           <img
+          src="https://images.pexels.com/photos/2583852/pexels-photo-2583852.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          className=" object-cover"
+          alt=""
+          onClick={preImg}
+        />
+        </div>
+      )}
       <div className="w-full h-[500px] bg-green  ">
-        <SwiperPhotos />
+        {/* <SwiperPhotos /> */}
+        {/* <PreImage /> */}
         {/* <img
           src="https://images.pexels.com/photos/2583852/pexels-photo-2583852.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           className="w-full h-full object-cover"
           alt=""
+          onClick={preImg}
         /> */}
+
+<Swiper
+        // slidesPerView={1}
+        // spaceBetween={-150}
+        loop={true}
+        // pagination={{ clickable: true }}
+        className="bg-red-500 h-[350px]"
+      >
+        <SwiperSlide>
+          <PreImage />
+        </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://images.pexels.com/photos/5819116/pexels-photo-5819116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              className="w-full h-full object-cover"
+              alt=""
+              onClick={preImg}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://images.pexels.com/photos/2121455/pexels-photo-2121455.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              className="w-full h-full object-cover"
+              alt=""
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              className="w-full h-full object-cover"
+              alt=""
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://images.pexels.com/photos/3225531/pexels-photo-3225531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              className="w-full h-full object-cover"
+              alt=""
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://images.pexels.com/photos/1320686/pexels-photo-1320686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              className="w-full h-full object-cover"
+              alt=""
+            />
+          </SwiperSlide>
+      </Swiper>
         <div className="w-full h-20 bg-gradient-to-b from-[#00000067] to-transparent absolute top-0 flex items-center px-5 z-10">
           <Link href={"/home"}>
             <span className="text-white text-xl">
