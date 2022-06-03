@@ -8,6 +8,9 @@ const Wellcome = () => {
     <div className="fadeInUp w-screen h-screen flex flex-col justify-center items-center bg-[#F3F5F6]">
       <Head>
         <title>Pergi</title>
+        <meta property="og:image" content="Logo.png" />
+        <meta name="description" content="Aplikasi travel" />
+        <link rel="shortcut icon" href="Logo.png" type="image/png" />
         <link rel="icon" href="Logo.png" />
         <link
           href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap"
